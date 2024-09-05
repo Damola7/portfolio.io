@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jubril's personal portfolio website">
+  <title>Jubril's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Jubril's Portfolio</h1>
+  <div class="menu-toggle">☰</div> <!-- Menu Toggle Button -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="images/pic.JPG" alt="profile-picture" class="profile-pic">
+    <p>Hi! I'm Jubril, a passionate and aspiring web developer with a keen interest in creating dynamic and user-friendly websites. My journey into web development began with a fascination for technology and a desire to understand how websites are built and function.
+            <br>
+        I have recently completed projects where I've had the opportunity to work with HTML, CSS, and JavaScript. I'm continuously learning and expanding my skill set through online courses, tutorials, and hands-on practice.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">HTML5</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">MySQL</div>
+    </div>
+  </section>
+
+  <!-- Educational Background Section -->
+  <section id="education">
+    <h2>Educational Background</h2>
+    <p>Download my <a href="images/JubrilShotayoResume.pdf" download>CV</a>.</p>
+  </section>
+
+  <!-- Interests Section -->
+  <section id="interests">
+    <h2>Interests</h2>
+    <div class="interests-grid">
+        <div class="interest">Artificial Intelligence</div>
+        <div class="interest">PHP</div>
+        <div class="interest">JavaScript</div>
+        <div class="interest">WordPress</div>
+        <div class="interest">BootStrap</div>
+        <div class="interest">Python</div>
+        <div class="interest">WooCommerce</div>
+        <div class="interest">GitLab</div>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://animebloodline.infinityfreeapp.com/" target="_blank">ANiME BLOODLiNE</a> - A blog built for anime news and videos.</li>
+      <li><a href="https://hautfeetng.infinityfreeapp.com/" target="_blank">HAUTFEETNG</a> - A bakery website built with Wordpress. <p5 style="color: red;">(IN PROGRESS)</p5></li>
+    </ul>
+  </section>
+
+  <!-- Contact Form Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button type="submit">Send</button>
+    </form>
+    <p id="formResponse" style="display:none;">Thank you! Your message has been sent.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jubril. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
