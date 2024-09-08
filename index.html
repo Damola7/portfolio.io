@@ -3,103 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jubril's personal portfolio website">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-32x32.png">
-<link rel="manifest" href="/site.webmanifest">
-  <title>Jubril's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1>Jubril's Portfolio</h1>
-  <div class="menu-toggle">☰</div> <!-- Menu Toggle Button -->
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  </header>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="images/pic.JPG" alt="profile-picture" class="profile-pic">
-    <p>Hi! I'm Jubril, a passionate and aspiring web developer with a keen interest in creating dynamic and user-friendly websites. My journey into web development began with a fascination for technology and a desire to understand how websites are built and function.
-            <br>
-        I have recently completed projects where I've had the opportunity to work with HTML, CSS, and JavaScript. I'm continuously learning and expanding my skill set through online courses, tutorials, and hands-on practice.</p>
-  </section>
-
-  <!-- Skills Section -->
-  <!-- Skills Section -->
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-item">HTML5</div>
-      <div class="skill-item">CSS</div>
-      <div class="skill-item">JavaScript</div>
-      <div class="skill-item">MySQL</div>
+  
+    <nav class="navbar">
+        <div class="nav-container">
+          <a href="#Home" class="nav-logo"><img src="#" alt="nav-logo"></a>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+  <section class="hero" id="Home">
+    <video autoplay muted loop id="bg-video">
+      <source src="images/web-bckgrnd.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm Jubril, a passionate developer specializing in creating impactful digital experiences.</p>
+      <a href="#Get-in-touch" class="btn-primary">Get in Touch</a>
     </div>
   </section>
 
-  <!-- Educational Background Section -->
-  <section id="education">
-    <h2>Educational Background</h2>
-    <p>Download my <a href="images/JubrilShotayoResume.pdf" download>CV</a>.</p>
+  
+  <section id="about" class="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>Hello! I'm Jubril, a passionate developer with a strong background in creating impactful digital experiences. I specialize in web development, with a focus on crafting clean, user-friendly designs and efficient, scalable code.</p>
+      
+        <section id="experience" class="experience">
+            <div class="experience-container">
+              <h2>Experience</h2>
+              <p>Here's a brief overview of my experience background:</p>
+              <div class="experience-details">
+                <div class="experience-item">
+                  <h3>Online Courses</h3>
+                  <p>Various Platforms, 2020 - Present</p>
+                  <p>Completed courses in web development, machine learning, and cloud computing.</p>
+                </div>
+              </div>
+              <a href="path/to/your-cv.pdf" class="btn-primary" download>Download My CV</a>
+            </div>
+          </section>
   </section>
-
-  <!-- Interests Section -->
-  <section id="interests">
-    <h2>Interests</h2>
-    <div class="interests-grid">
-        <div class="interest">Artificial Intelligence</div>
-        <div class="interest">PHP</div>
-        <div class="interest">JavaScript</div>
-        <div class="interest">WordPress</div>
-        <div class="interest">BootStrap</div>
-        <div class="interest">Python</div>
-        <div class="interest">WooCommerce</div>
-        <div class="interest">GitLab</div>
+  <section id="skills" class="skills">
+    <div class="skills-container">
+      <h2>My Skills</h2>
+      <p>Here are some of the skills I have honed over the years:</p>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="fas fa-code"></i>
+          <h3>JavaScript</h3>
+          <p>Proficient in JavaScript and modern frameworks.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-html5"></i>
+          <h3>Html5</h3>
+          <p>Experienced with building dynamic user interfaces using html5.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-server"></i>
+          <h3>My SQL</h3>
+          <p>Skilled in server-side development using MySQL and Express.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-css3"></i>
+          <h3>CSS</h3>
+          <p>I create responsive layouts and styling with and CSS.</p>
+        </div>
       </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://animebloodline.infinityfreeapp.com/" target="_blank">ANiME BLOODLiNE</a> - A blog built for anime news and videos.</li>
-      <li><a href="https://hautfeetng.infinityfreeapp.com/" target="_blank">HAUTFEETNG</a> - A bakery website built with Wordpress. <p5 style="color: red;">(IN PROGRESS)</p5></li>
-    </ul>
-  </section>
-
-  <!-- Contact Form Section -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    </div>
+  </section>      
   
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="_replyto" required>
-  
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-  
-      <button type="submit">Send</button>
-    </form>
-    <p id="formResponse" style="display:none;">Thank you! Your message has been sent.</p>
+  <section id="works" class="works">
+    <div class="works-container">
+      <h2>My Works</h2>
+      <p>Check out some of the projects I've worked on:</p>
+      <div class="works-grid">
+        <div class="work-item">
+          <img src="path/to/project1.jpg" alt="Project 1">
+          <div class="work-overlay">
+            <h3>Project 1</h3>
+            <p>A brief description of the project.</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="path/to/project2.jpg" alt="Project 2">
+          <div class="work-overlay">
+            <h3>Project 2</h3>
+            <p>A brief description of the project.</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="path/to/project3.jpg" alt="Project 3">
+          <div class="work-overlay">
+            <h3>Project 3</h3>
+            <p>A brief description of the project.</p>
+          </div>
+      </div>
+    </div>
   </section>
+  
 
-  <footer>
-    <p>&copy; 2024 Jubril. All rights reserved.</p>
-  </footer>
-
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>If you have any questions or just want to get in touch, feel free to reach out using the form below or through the contact details provided.</p>
+      <div class="contact-details">
+        <form action="your-form-handler.php" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Hi, Care to collaborate on project X?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info" id="Get-in-touch">
+        <h3>Get In Touch</h3>
+        <p><i class="fas fa-phone"></i> (+234) 812-400-2139</p>
+        <p><i class="fas fa-envelope"></i> jubrilshotayo7@gmail.com</p>
+      </div>
+    </div>
+  </section>
+  
   <script src="script.js"></script>
 </body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2024 Jubril's Portfolio. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="https://github.com/your-github-profile" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/your-twitter-profile" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
 </html>
