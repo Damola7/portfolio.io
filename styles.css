@@ -8,6 +8,28 @@ body, h1, p {
   box-sizing: border-box;
 }
 
+.text {
+  color: red;
+}
+
+#form-response {
+  color: gray;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 30px;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -71,7 +93,7 @@ body, h1, p {
 }
 
 .btn-primary:hover {
-  background-color: grey;
+  background-color: lightgray
 }
 
 /* Responsive Design */
@@ -227,8 +249,27 @@ body, h1, p {
 }
 
 .about-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Space between text and image */
+}
+
+.about-text {
+  flex: 1;
+  text-align: left; /* Align text to the left */
+}
+
+.about-image img {
+  width: 250px; /* Adjust width as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about h2 {
@@ -241,50 +282,23 @@ body, h1, p {
   margin-bottom: 2rem;
 }
 
-.about-details {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.about-item {
-  background-color: #f9f9f9; /* Light background for each item */
-  padding: 1.5rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.about-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.about-item ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-item ul li {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-image img {
+    width: 50%; /* Adjust width for smaller screens */
+  }
+  
   .about h2 {
     font-size: 2rem;
   }
   
   .about p {
     font-size: 1rem;
-  }
-  
-  .about-details {
-    gap: 1.5rem;
-  }
-  
-  .about-item {
-    padding: 1rem;
   }
 }
 
@@ -295,10 +309,6 @@ body, h1, p {
   
   .about p {
     font-size: 0.875rem;
-  }
-  
-  .about-item {
-    padding: 0.75rem;
   }
 }
 
